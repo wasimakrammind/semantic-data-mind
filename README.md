@@ -82,7 +82,7 @@ We sit at the **intersection of syntactic and semantic data quality evaluation**
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 User uploads CSV/Excel/JSON/Parquet
@@ -106,7 +106,7 @@ User uploads CSV/Excel/JSON/Parquet
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - Python 3.10+
@@ -150,7 +150,7 @@ streamlit run ui/app.py
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 datamind-ai/
@@ -158,17 +158,17 @@ datamind-ai/
 │   ├── settings.py              # App configuration (Pydantic)
 │   └── prompts/                 # LLM system prompts
 ├── src/
-│   ├── agent/                   # 🤖 LLM orchestration
+│   ├── agent/                   # LLM orchestration
 │   │   ├── orchestrator.py      # ReAct agent loop
 │   │   ├── tool_registry.py     # Tool dispatch system
 │   │   ├── tool_definitions.py  # 11 Claude API tool schemas
 │   │   ├── context_manager.py   # Token budgeting & context window
 │   │   └── conversation.py      # Session state management
-│   ├── ingestion/               # 📥 Data loading
+│   ├── ingestion/               #  Data loading
 │   │   ├── loader.py            # Multi-format loader (CSV/Excel/JSON/Parquet)
 │   │   ├── schema_detector.py   # Semantic type inference
 │   │   └── sampling.py          # Smart sampling for LLM context
-│   ├── validation/              # ✅ Data quality
+│   ├── validation/              #  Data quality
 │   │   ├── validator.py         # Validation orchestrator
 │   │   └── rules/
 │   │       ├── statistical.py   # Outlier detection
@@ -176,29 +176,29 @@ datamind-ai/
 │   │       ├── schema_rules.py  # Type consistency & missing data
 │   │       ├── cross_column.py  # Cross-column logic
 │   │       └── semantic.py      # LLM-powered semantic checks
-│   ├── eda/                     # 📊 Exploratory analysis
+│   ├── eda/                     #  Exploratory analysis
 │   │   ├── analyzer.py          # Auto-EDA orchestrator
 │   │   ├── statistics.py        # Descriptive stats & distributions
 │   │   ├── correlations.py      # Correlation analysis
 │   │   ├── trends.py            # Trend & seasonality detection
 │   │   ├── feature_importance.py# Feature ranking
 │   │   └── visualizer.py        # Plotly chart generation
-│   ├── explanation/             # 💬 Plain-English output
+│   ├── explanation/             #  Plain-English output
 │   │   └── explainer.py         # Result explanation templates
-│   ├── models/                  # 📦 Data models
+│   ├── models/                  #  Data models
 │   │   ├── dataset.py           # Dataset & metadata
 │   │   ├── validation_result.py # Findings & reports
 │   │   └── analysis_result.py   # EDA results
-│   └── utils/                   # 🔧 Utilities
+│   └── utils/                   #  Utilities
 │       ├── serialization.py     # DataFrame ↔ LLM formatting
 │       └── token_counter.py     # Token estimation
-├── ui/                          # 🖥️ Streamlit interface
+├── ui/                          # Streamlit interface
 │   ├── app.py                   # Main entry point
 │   └── components/
 │       ├── sidebar.py           # Upload, settings, quick actions
 │       ├── chat.py              # Conversational interface
 │       └── charts.py            # Chart rendering
-├── tests/                       # 🧪 Test suite (25 tests)
+├── tests/                       # Test suite (25 tests)
 │   ├── fixtures/                # Test data files
 │   └── unit/                    # Unit tests
 ├── requirements.txt
@@ -208,7 +208,7 @@ datamind-ai/
 
 ---
 
-## 🧪 Running Tests
+##  Running Tests
 
 ```bash
 # Run all tests
@@ -221,11 +221,11 @@ pytest tests/unit/test_validator.py -v
 pytest tests/ --cov=src --cov-report=term-missing
 ```
 
-**Current status: 25/25 tests passing** ✅
+**Current status: 25/25 tests passing** 
 
 ---
 
-## ⚙️ Configuration
+##  Configuration
 
 All settings are managed via environment variables or `.env` file:
 
@@ -266,7 +266,7 @@ All settings are managed via environment variables or `.env` file:
 
 ---
 
-## 🎓 The Value Proposition
+##  The Value Proposition
 
 ### For Cloud Providers (Microsoft, Google, Databricks, Snowflake)
 - **New revenue stream** — offer as a premium data quality service
@@ -281,7 +281,7 @@ All settings are managed via environment variables or `.env` file:
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Please open an issue first to discuss what you'd like to change.
 
@@ -293,7 +293,7 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - [Anthropic Claude](https://www.anthropic.com) — powering the AI agent
 - [Streamlit](https://streamlit.io) — for the beautiful web interface
